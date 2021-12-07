@@ -4,4 +4,4 @@ Live = https://online-test-junior-developer-moustache-republic.netlify.app/
 
 This is created using HTML5, Sass and Javascript.
 
-This webasite is hosted on Netlify.
+This website is hosted on Netlify.
