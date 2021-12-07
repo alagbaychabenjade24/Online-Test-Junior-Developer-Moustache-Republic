@@ -16,12 +16,10 @@ cartContent.addEventListener('click', () => {
 	cartItems.classList.toggle('cart__items--active');
 });
 
-let value = 1;
-
 addBtn.addEventListener('click', () => {
 	productActiveDivs.forEach(productActiveDiv => {
 		if (productActiveDiv.classList.contains('selection__color__change')) {
-			quantity.textContent = `(${value++})`;
+			return;
 		} else {
 			errorMessage.classList.add('error__message--active');
 		}
