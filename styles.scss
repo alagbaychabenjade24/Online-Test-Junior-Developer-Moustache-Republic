@@ -76,6 +76,10 @@ header {
 			max-width: 300px;
 
 			.item {
+				display: none;
+			}
+
+			.item__show {
 				display: grid;
 				grid-template-columns: 1fr 2fr;
 				grid-gap: 10px;
@@ -202,7 +206,7 @@ main {
 			max-width: max-content;
 			margin: 10px 0 20px;
 
-			div {
+			li {
 				display: flex;
 				align-items: center;
 				justify-content: center;
