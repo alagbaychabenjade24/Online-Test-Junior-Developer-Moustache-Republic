@@ -1,3 +1,4 @@
+const quantity = document.querySelector('.quantity');
 const addBtn = document.querySelector('.product--add');
 const selectedSize = document.querySelector('.selected__size');
 const productActive = document.querySelector('.product--active');
@@ -64,6 +65,10 @@ addBtn.addEventListener('click', () => {
 				'.00';
 
 			cartItemSize.innerHTML = productActiveList.textContent;
+
+			quantity.innerHTML = `(${Number(
+				cartItemNumber.innerHTML.replace(/[^0-9\.]+/g, '')
+			)})`;
 
 			errorMessage.classList.remove('error__message--active');
 		} else {
